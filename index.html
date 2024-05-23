@@ -1,19 +1,11 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Kite Tv Home</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/kite-tv/kite-tv.github.io/main/styles.css">
-    <link rel="stylesheet" href="quiz.css"> <!-- Add this line -->
-</head>
-<body>
-    <!-- Existing content of the home page -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kite Tv Quiz Time</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/kite-tv/kite-tv.github.io/main/styles.css">
+    <link rel="stylesheet" href="quiz.css"> <!-- Add this line -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8272689330772081"
      crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
@@ -42,11 +34,28 @@
     </nav>
 </header>
 <main>
-    <section class="trending-quizzes">
-        <h2>Trending Quizzes</h2>
-        <p>Trending quizzes will be available here.</p>
-    </section>
-</main>
+  <section></section><div class="quiz-container" id="quiz-content">
+        <h1>Kite Tv Quiz Time</h1>
+        <div id="question-content">
+            <!-- Questions will be dynamically inserted here by JavaScript -->
+        </div>
+        <div id="navigation-buttons">
+            <button class="nav-btn hidden" id="prev-btn" onclick="prevQuestion()">Previous</button>
+            <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+        <button class="submit-btn hidden" id="submit-btn" onclick="submitQuiz()">Submit</button>
+    </div>
+
+    <div class="score-container" id="score-container">
+        <h1>Quiz Results</h1>
+        <p id="user-score"></p>
+        <div id="detailed-results">
+            <!-- Detailed results will be inserted here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="quiz.js"></script><section></section></main>
 
 <footer>
   
@@ -72,29 +81,4 @@
 <script src="scripts.js"></script>
 </body>
               </html>
-  
-    <!-- Quiz HTML Structure -->
-    <div class="quiz-container" id="quiz-content">
-        <h1>Kite Tv Quiz Time</h1>
-        <div id="question-content">
-            <!-- Questions will be dynamically inserted here by JavaScript -->
-        </div>
-        <div id="navigation-buttons">
-            <button class="nav-btn hidden" id="prev-btn" onclick="prevQuestion()">Previous</button>
-            <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Next</button>
-        </div>
-        <button class="submit-btn hidden" id="submit-btn" onclick="submitQuiz()">Submit</button>
-    </div>
-
-    <div class="score-container" id="score-container">
-        <h1>Quiz Results</h1>
-        <p id="user-score"></p>
-        <div id="detailed-results">
-            <!-- Detailed results will be inserted here -->
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-    <script src="quiz.js"></script> <!-- Add this line -->
-</body>
-</html>
+ 
