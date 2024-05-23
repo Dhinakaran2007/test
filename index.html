@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kite Tv Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz.css"> <!-- Add this line -->
+</head>
+<body>
+    <!-- Existing content of the home page -->
+
+    <!-- Quiz HTML Structure -->
+    <div class="quiz-container" id="quiz-content">
+        <h1>Kite Tv Quiz Time</h1>
+        <div id="question-content">
+            <!-- Questions will be dynamically inserted here by JavaScript -->
+        </div>
+        <div id="navigation-buttons">
+            <button class="nav-btn hidden" id="prev-btn" onclick="prevQuestion()">Previous</button>
+            <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+        <button class="submit-btn hidden" id="submit-btn" onclick="submitQuiz()">Submit</button>
+    </div>
+
+    <div class="score-container" id="score-container">
+        <h1>Quiz Results</h1>
+        <p id="user-score"></p>
+        <div id="detailed-results">
+            <!-- Detailed results will be inserted here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="quiz.js"></script> <!-- Add this line -->
+</body>
+</html>
